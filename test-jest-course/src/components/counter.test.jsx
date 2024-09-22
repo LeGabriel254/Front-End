@@ -19,8 +19,8 @@ test('Increment counter', () => {
   fireEvent.click(screen.getAllByText('increment'))
   expect(screen.getByText(/Count: 1/i)).toBeInTheDocument()
 });
-
 //Test to check if the Decrement button works
+
 test('Decrement counter', () => {
   render(<Counter />)
   //Initialise click Event
