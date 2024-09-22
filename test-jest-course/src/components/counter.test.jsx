@@ -2,7 +2,7 @@ import { render, screen, fireEvent, getAllByText } from '@testing-library/react'
 import Counter from './counter';
 
 // Test to check if the counter renders correctly
-test('render counter components', () => {
+test('render Counter components', () => {
   render(<Counter />)
   // verify component initial render
   expect(screen.getByText(/Count: 0/i)).toBeInTheDocument();
