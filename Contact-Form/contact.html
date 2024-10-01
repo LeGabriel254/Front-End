@@ -1,14 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
-</head>
-<body>
-  <header>
-    <h1>Contact Us</h1>
-  </header>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    
+    <!-- main container -->
+    <main class="main__container">
+      <!-- form heading -->
+      <h1 class="main__container__title">Contact Us</h1>
+
+      <!-- form -->
+      <form class="main__container__form" method="get" action="/">
+        <!-- first name -->
+        <div class="form__group">
+          <label for="first-name"
+            >First Name <span class="required">*</span></label
+          >
+          <input
+            id="first-name"
+            class="form__input"
+            type="text"
+            placeholder="First Name"
+            name="first-name"
+            autocomplete="given-name"
+            aria-invalid="false"
+            aria-describedby="fname-error"
+            required
+          />
+          <span id="fname-error" aria-live="polite"></span>
+        </div>
+
+        <!-- last name -->
+        <div class="form__group">
+          <label for="last-name"
+            >Last Name <span class="required">*</span></label
+          >
+          <input
+            id="last-name"
+            class="form__input"
+            type="text"
+            placeholder="Last Name"
+            name="last-name"
+            autocomplete="family-name"
+            aria-invalid="false"
+            aria-describedby="lname-error"
+            required
+          />
+          <span id="lname-error" aria-live="polite"></span>
+        </div>
+
+        <!-- email -->
+        <div class="form__group form__group__email">
+          <label for="email"
+            >Email Address <span class="required">*</span></label
+          >
+          <input
+            id="email"
+            class="form__input"
+            type="email"
+            placeholder="Email Address"
+            name="email"
+            autocomplete="email"
+            aria-invalid="false"
+            aria-describedby="email-error"
+            required
+          />
+          <span id="email-error" aria-live="polite"></span>
+        </div>
+
+        <!-- query type -->
+        <fieldset
+          class="form__group form__group__fieldset"
+          aria-invalid="false"
+        >
+          <legend class="form__group__fieldset__heading">
+            Query Type <span class="required">*</span>
+          </legend>
+          <p class="sr-only">Use arrow keys to navigate between options</p>
+          <div class="form__group__fieldset__radio__box">
+            <input
+              type="radio"
+              id="general-enquiry"
+              name="query-type"
+              value="general enquiry"
+              aria-describedby="query-type-error"
+              required
+            />
+            <label for="general-enquiry">General Enquiry</label>
+          </div>
+          <div class="form__group__fieldset__radio__box">
+            <input
+              type="radio"
+              id="support-request"
+              name="query-type"
+              value="support request"
+              aria-describedby="query-type-error"
+              required
+            />
+            <label for="support-request">Support Request</label>
+          </div>
+          <span id="query-type-error" aria-live="polite"></span>
+        </fieldset>
+
+        <!-- message -->
+        <div class="form__group form__group__message">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea
+            id="message"
+            class="form__textarea"
+            placeholder="Message"
+            name="message"
+            aria-invalid="false"
+            aria-describedby="message-error"
+            required
+          ></textarea>
+          <span id="message-error" aria-live="polite"></span>
+        </div>
+
+        <!-- consent -->
+        <div class="form__group__checkbox">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            aria-invalid="false"
+            aria-describedby="consent-error"
+            required
+          />
+          <label for="consent"
+            >I consent to being contacted by the team
+            <span class="required">*</span></label
+          >
+          <span id="consent-error" aria-live="polite"></span>
+        </div>
+
+        <!-- submit button -->
+        <button class="form__button" type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="contact.js"></script>
+  </body>
 </html>
