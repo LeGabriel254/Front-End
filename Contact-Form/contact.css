@@ -40,7 +40,7 @@ body {
   height: 100vh; 
 }
 .radio{
-  color: rgb(236, 43, 49);
+  color: rgb(255, 127, 131);
 }
 .form__button:hover {
   transition: all 0.3s ease-in-out;
