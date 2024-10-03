@@ -30,6 +30,17 @@ body {
   overflow-x: hidden;
   height: 100vh;
   text-align: left;
+
+}
+
+.contact-form-container{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+.radio{
+  color: rgb(236, 43, 49);
 }
 .form__button:hover {
   transition: all 0.3s ease-in-out;
@@ -68,6 +79,7 @@ body {
   margin: 1em;
   padding: 1em;
   border-radius: 20px;
+  top: -20px;
 }
 .main__container__title {
   color: var(--darkerGrey);
