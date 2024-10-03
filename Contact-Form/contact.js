@@ -79,9 +79,8 @@ form.addEventListener("submit", function (event) {
     // You can add form submission logic here
     form.reset();
   }
-});
 
-// Function to show error messages
+  // Function to show error messages
 function showOrRemoveError(element, message) {
   const parent = element.closest(".form__group") || element.parentElement;
   const errorSpan = parent.querySelector("span[id$='-error']");
@@ -96,3 +95,31 @@ function showOrRemoveError(element, message) {
     element.setAttribute("aria-invalid", "false");
   }
 }
+        // Select all radio inputs
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+        // Function to update the radio button styles
+        function updateRadioStyles() {
+            // Iterate through each radio button
+            radioButtons.forEach(radio => {
+                // Get the custom dot inside the label
+                let customDot = radio.nextElementSibling.querySelector('.dot');
+
+                // If the radio button is checked, make the dot green
+                if (radio.checked) {
+                    customDot.style.backgroundColor = 'green';
+                } else {
+                    customDot.style.backgroundColor = 'transparent'; // Reset the dot color if not checked
+                }
+            });
+        }
+
+        // Listen for change events on each radio button
+        radioButtons.forEach(radio => {
+            radio.addEventListener('change', updateRadioStyles);
+        });
+
+        // Initial call to set the correct styles on page load
+        updateRadioStyles();
+});
+
