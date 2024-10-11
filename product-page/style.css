@@ -29,9 +29,10 @@ body, ul {
   
   color:ghostwhite;
   cursor: default;
-  margin-top: 40px;
-  left:180px;
+  margin-top: 27px;
+  left:145px;
   position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Style for nav links */
@@ -39,14 +40,15 @@ body, ul {
   list-style: none; 
   display: flex;
   gap: 20px; 
-  margin-top: 40px;
-  margin-right: 158px;
+  margin-top: 35px;
+  margin-right: 95px;
 }
 
 .nav-links li a {
-  color: white;
+  color: #daf0f5;
   text-decoration: none; 
   padding: 8px 12px;
+  font-weight: 400;
   
 }
 
@@ -80,8 +82,12 @@ font-weight: bolder;
   font-size: 15px;
   padding: 14px;
 }
+.content img{
+margin-top: -55px;
+padding:  1px;
 
-#container img{
+}
+.main{
 margin-top: -55px;
 padding:  1rem;
 }
@@ -99,14 +105,6 @@ padding:  1rem;
 
  
 
-/* .primary-button, .secondary {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  font-size: 14px;
-  cursor: pointer;
-} */
-
 .primary-button{
   background-color: #157A74;
   padding: 16px 35px;
@@ -114,10 +112,12 @@ padding:  1rem;
   border-radius:35px;
   border: none;
   cursor: pointer;
+  font-weight:bold;
 };
 
 .secondary img{
-   width: 2px; /* Adjust size */
+   width: 4px; 
+   padding-bottom: 100rem;
    
 
 }
@@ -185,5 +185,18 @@ cursor: pointer;
   border-radius: 5px;
  
   /* margin-right: 15px; */
+}
+
+.hero-section{
+  background-color: white;
+  padding: 10px;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  position: relative;
+  border-radius: 20px;
+  border: 0.5px solid darkgray;
 }
 
