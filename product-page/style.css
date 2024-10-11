@@ -4,15 +4,53 @@
   box-sizing: border-box;
  
 }
+html {
+  scroll-behavior: smooth;
+}
 
 
+/* /* Reset margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
 
-nav{
-  /* position: relative; */
-  width: 80%;
-  height: 80%;
+/* Style for navbar */
+.navbar {
   display: flex;
-  /* align-items:center; */
+  justify-content: flex-end; /* Aligns the nav to the right */
   background-image: url('images/image-hero-desktop.jpg');
-  background-size: contain;
+  background-size: cover;
+  height: 50vh;
+  padding: 10px;
+}
+
+.logo{
+  /* font-size: 3em; */
+  color:ghostwhite;
+  cursor: default;
+  margin-top: 40px;
+  left:180px;
+  position: fixed;
+}
+
+/* Style for nav links */
+.nav-links {
+  list-style: none; /* Removes bullet points */
+  display: flex;
+  gap: 20px; /* Space between links */
+  margin-top: 40px;
+  margin-right: 150px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none; /* Removes underline from links */
+  padding: 8px 12px;
+  /* margin-top: 50px; */
+}
+
+.nav-links li a:hover {
+  border-radius: 4px;
+  color: beige;
 }
