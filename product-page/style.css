@@ -68,28 +68,29 @@ body, ul {
   border-radius: 20px
 };
 
-.content h1{
-font-size: 30px;
-margin-bottom: 10px;
+.content h2{
+font-size: 500px;
 font-weight: bolder;
 }
 
 .content p{
   color: darkgrey;
   font-weight: 100 ; 
-  margin-bottom: 10px;
-  font-size: 20px;
+  /* margin-bottom: 10px; */
+  font-size: 15px;
+  padding: 14px;
 }
 
-.content img{
-margin-top: -40px;
+#container img{
+margin-top: -55px;
+padding:  1rem;
 }
 
 .btn{
     display: flex;
-    justify-content: space-between; /* Push buttons to the left and right ends */
-    align-items: center; /* Align buttons vertically */
-    padding: 20px; /* Add some padding if needed */
+    justify-content:space-around;
+    align-items: center; 
+    padding: 20px; 
     width: 100%; /* Ensure the container spans the full width of the parent */
     box-sizing: border-box; /* Ensure padding is included in width */
     margin-bottom: 40px;
@@ -134,7 +135,7 @@ cursor: pointer;
   margin-left: 20rem;
   margin-top: 2rem;
   display: flex;
-  position: relative;
+ 
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
@@ -143,34 +144,24 @@ cursor: pointer;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-/* #container2 div{
-  display: inline-block;
-  justify-content:baseline;
-} */
+
 
 .amount {
-  font-size: 25px;
+  font-size: 30px;
   display:inline;
   font-weight: bold;
-  margin-top: -5rem;
-  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+ left: -2rem;
   padding: 20px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  text-align: center;
  
 }
-/* .stats {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 25px;
-} */
 
 .goal, .backers, .days-left {
-  font-size: 10px;
+  font-size: 13px;
   color: #777;
+  font-weight: lighter;
 }
 
 .separator {
@@ -178,19 +169,21 @@ cursor: pointer;
 }
 
 .progress-bar {
-  position: relative;
+ 
   width: 50%;
-  height: 5px;
+  height: 13px;
   background-color: #e0e0e0;
   border-radius: 5px;
-  margin-top: 200px;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  margin-left: -22.7rem;
 }
 
 .progress {
   background-color: #20c997;
   height: 100%;
   border-radius: 5px;
-  margin-bottom: 12px;
-  margin-right: -20px;
+ 
+  /* margin-right: 15px; */
 }
 
