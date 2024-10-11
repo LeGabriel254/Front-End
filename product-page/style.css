@@ -266,4 +266,25 @@ font-size: 12px;
   text-align: justify;
   margin-left: 30px;
   color: #777;
+};
+.reward h3{
+display: flex;
+margin-top: 2rem;
+bottom:13px ;
+}
+
+.reward button{
+  background-color: #157A74;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 25rem;
+  margin-top: -3rem;
+}
+
+.reward button:hover{
+  background-color: #1f5652;
 }
