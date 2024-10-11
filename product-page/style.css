@@ -91,8 +91,8 @@ padding:  1rem;
     justify-content:space-around;
     align-items: center; 
     padding: 20px; 
-    width: 100%; /* Ensure the container spans the full width of the parent */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    width: 100%; 
+    box-sizing: border-box; 
     margin-bottom: 40px;
     margin-top: 15px;
 }
