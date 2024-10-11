@@ -248,3 +248,22 @@ ul {
   margin-top: 14px;
   margin-left: 15px;
 }
+.bamboo a{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rem;
+justify-content: flex-end;
+margin-top: -2.5rem;
+padding: 20px;
+text-decoration: none;
+color:#20c997;
+font-weight: 600;
+font-size: 12px;
+}
+
+.bamboo p{
+  line-height: 1.5;
+  text-align: justify;
+  margin-left: 30px;
+  color: #777;
+}
