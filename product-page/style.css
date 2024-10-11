@@ -69,8 +69,9 @@ body, ul {
 };
 
 .content h1{
-font-size: 24px;
+font-size: 30px;
 margin-bottom: 10px;
+font-weight: bolder;
 }
 
 .content p{
@@ -92,7 +93,7 @@ margin-top: -40px;
     width: 100%; /* Ensure the container spans the full width of the parent */
     box-sizing: border-box; /* Ensure padding is included in width */
     margin-bottom: 40px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
  
@@ -128,3 +129,15 @@ border-radius:35px;
 border: none;
 cursor: pointer;
 }
+
+#container2{
+  background-color: white;
+  padding: 10px;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  position: relative;
+  border-radius: 20px
+};
