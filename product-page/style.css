@@ -140,4 +140,39 @@ cursor: pointer;
   margin-top: 2rem;
   position: relative;
   border-radius: 20px
-};
+}
+#container2 div{
+  display: inline-block;
+  justify-content:baseline;
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.goal, .backers, .days-left {
+  font-size: 14px;
+  color: #777;
+}
+
+.separator {
+  color: #777;
+}
+
+.progress-bar {
+  position: relative;
+  width: 50%;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.progress {
+  background-color: #20c997;
+  height: 100%;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  margin-right: -20px;
+}
+
