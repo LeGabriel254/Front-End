@@ -333,3 +333,26 @@ ul {
   text-align: justify;
   margin-left: 22px;
 }
+
+.edition h4{
+ display: flex;
+ margin-top: 1rem;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.select-button{
+  flex-direction: column-reverse;
+  background-color: #366a67;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 25rem;
+  margin-top: -2rem;
+}
+.select-button:hover{
+  background-color: #1f5652;
+}
