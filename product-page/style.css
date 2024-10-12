@@ -200,7 +200,7 @@ ul {
 
 .hero-section {
   background-color: white;
-  padding: 5px;
+  padding: 10px;
   width: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -209,6 +209,7 @@ ul {
   position: relative;
   border-radius: 10px;
   border: 1px solid #e0e0e0;
+  margin-bottom: 5rem;
 }
 
 .about {
@@ -355,4 +356,45 @@ ul {
 }
 .select-button:hover{
   background-color: #1f5652;
+}
+
+.special{
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(233, 230, 230);
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #f1e8e8;
+  margin-top: 1rem;
+}
+
+
+.special h4{
+  color: #777;
+  display: flex;
+ margin-top: 1rem;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.special a{
+  display: flex;
+  flex-direction:row;
+  text-decoration: none;
+  color:#1f7e6c ;
+  cursor: text;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 29rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.special p{
+  line-height: 1.5;
+  text-align: justify;
+  color: #777;
+  margin-left: 20px;
+  padding-bottom: 10px;
 }
