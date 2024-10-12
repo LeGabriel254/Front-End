@@ -200,7 +200,7 @@ ul {
 
 .hero-section {
   background-color: white;
-  padding: 10px;
+  padding: 5px;
   width: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -232,7 +232,7 @@ ul {
 
 }
 
-.bamboo{
+.bamboo {
   background-color: white;
   padding: 10px;
   width: 100%;
@@ -243,38 +243,46 @@ ul {
   margin-top: 1rem;
 }
 
-.bamboo h3{
+.bamboo h3 {
   display: flex;
-  margin-top: 14px;
+  margin-top: 10px;
   margin-left: 15px;
 }
-.bamboo a{
+
+.bamboo a {
   display: flex;
   flex-direction: row;
   margin-left: 20rem;
-justify-content: flex-end;
-margin-top: -2.5rem;
-padding: 20px;
-text-decoration: none;
-color:#157A74;
-font-weight: 600;
-font-size: 12px;
+  justify-content: flex-end;
+  margin-top: -2.5rem;
+  padding: 20px;
+  text-decoration: none;
+  color: #157A74;
+  font-weight: 600;
+  font-size: 12px;
 }
 
-.bamboo p{
+.bamboo a:hover {
+  color: #1f5652;
+}
+
+.bamboo p {
   line-height: 1.5;
   text-align: justify;
   margin-left: 30px;
   color: #777;
-};
-.reward h3{
-display: flex;
-margin-top: 2rem;
-bottom:13px ;
 }
 
-.reward button{
-  background-color: #157A74;
+;
+
+.reward h3 {
+  display: flex;
+  margin-top: 2rem;
+  bottom: 13px;
+}
+
+.reward button {
+  background-color: #366a67;
   padding: 10px 30px;
   color: white;
   border-radius: 25px;
@@ -285,6 +293,43 @@ bottom:13px ;
   margin-top: -3rem;
 }
 
-.reward button:hover{
+.reward button:hover {
   background-color: #1f5652;
+}
+
+.edition {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  margin-top: 1rem;
+}
+.edition h3 {
+  display: flex;
+  margin-top: 1rem;
+  bottom: 13px;
+}
+
+.edition a{
+  display: flex;
+  flex-direction:row;
+  text-decoration: none;
+  color:#157A74 ;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 29rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+.edition a:hover{
+  color: #1f5652;
+}
+.edition p{
+  color: #777;
+  line-height: 1.5;
+  text-align: justify;
+  margin-left: 22px;
 }
