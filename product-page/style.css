@@ -32,7 +32,7 @@ ul {
 }
 
 .logo {
-/* display: flex; */
+  /* display: flex; */
   color: ghostwhite;
   cursor: default;
   margin-top: 27px;
@@ -79,7 +79,7 @@ ul {
   transition: all 0.3 ease-in-out;
 }
 
-.text-container{
+.text-container {
   font-weight: 300;
   margin-top: 5rem;
 
@@ -92,7 +92,7 @@ ul {
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links a:hover{
+.menu-links a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
@@ -218,14 +218,19 @@ ul {
 
 ;
 
-.secondary img {
+#bookmark {
   width: 4px;
   padding-bottom: 100rem;
-
-
+  object-fit: contain;
+  height: 20px;
+  width: 20px;
 }
 
 .secondary {
+  /* display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: row;
   padding: 16px 35px;
   background-color: #F4F8F9;
   color:#1f7e6c;
@@ -233,6 +238,7 @@ ul {
   border-radius: 35px;
   border: none;
   cursor: pointer;
+  position: relative; */
 }
 
 #container2 {
@@ -400,41 +406,44 @@ ul {
   border: 1px solid #e0e0e0;
   margin-top: 1rem;
 }
+
 .edition h3 {
   display: flex;
   margin-top: 1rem;
   bottom: 13px;
 }
 
-.edition a{
+.edition a {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   text-decoration: none;
-  color:#157A74 ;
+  color: #157A74;
   font-weight: 600;
   font-size: 12px;
   margin-left: 29rem;
   margin-top: -1.5rem;
   margin-bottom: 2rem;
 }
-.edition a:hover{
+
+.edition a:hover {
   color: #1f5652;
 }
-.edition p{
+
+.edition p {
   color: #777;
   line-height: 1.5;
   text-align: justify;
   margin-left: 22px;
 }
 
-.edition h4{
- display: flex;
- margin-top: 1rem;
+.edition h4 {
+  display: flex;
+  margin-top: 1rem;
   gap: 5px;
   font-weight: bold;
 }
 
-.select-button{
+.select-button {
   flex-direction: column-reverse;
   background-color: #366a67;
   padding: 10px 30px;
@@ -446,11 +455,12 @@ ul {
   margin-left: 25rem;
   margin-top: -2rem;
 }
-.select-button:hover{
+
+.select-button:hover {
   background-color: #1f5652;
 }
 
-.special{
+.special {
   padding: 20px;
   width: 100%;
   position: relative;
@@ -462,19 +472,19 @@ ul {
 }
 
 
-.special h4{
+.special h4 {
   color: #777;
   display: flex;
- margin-top: 1rem;
+  margin-top: 1rem;
   gap: 5px;
   font-weight: bold;
 }
 
-.special a{
+.special a {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   text-decoration: none;
-  color:#1f7e6c ;
+  color: #1f7e6c;
   cursor: text;
   font-weight: 600;
   font-size: 12px;
@@ -483,7 +493,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-.special p{
+.special p {
   line-height: 1.5;
   text-align: justify;
   color: #777;
