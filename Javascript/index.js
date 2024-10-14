@@ -63,7 +63,7 @@ function collectTrash(callback){
 walkDog(() => {
    cleanKitchen(() => {
       collectTrash(() =>{
-         console.log("Completd chores")
+         console.log("Completed chores")
       })
    })
 })
