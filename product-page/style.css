@@ -333,7 +333,8 @@ ul {
   margin-top: 10px;
   margin-left: 15px;
   justify-content: space-between;
-    align-items: center; /* Aligns items vertically in the center */
+  align-items: center;
+  /* Aligns items vertically in the center */
 }
 
 .bamboo a {
@@ -341,12 +342,13 @@ ul {
   flex-direction: row;
   margin-left: 20rem;
   justify-content: space-between;
-    align-items: center; /* Aligns items vertically in the center */
+  align-items: center;
+  /* Aligns items vertically in the center */
   justify-content: flex-end;
   margin-top: -2.3rem;
   padding: 20px;
   text-decoration: none;
-  color:  #7DC3BB;
+  color: #7DC3BB;
   font-weight: 600;
   font-size: 12px;
 }
@@ -370,7 +372,7 @@ ul {
   bottom: 13px;
 }
 
-.select{
+.select {
   display: flex;
   font-size: 30px;
   margin-left: 8px;
@@ -410,18 +412,20 @@ ul {
   display: flex;
   /* margin-top: 0.5rem; */
   bottom: 13px;
-    justify-content: space-between;
-    align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between;
+  align-items: center;
+  /* Aligns items vertically in the center */
 }
 
 .edition a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; /* Aligns items vertically in the center */
+  align-items: center;
+  /* Aligns items vertically in the center */
   text-decoration: none;
   justify-content: flex-end;
-  color:  #7DC3BB;
+  color: #7DC3BB;
   font-weight: 600;
   font-size: 12px;
   margin-left: 29rem;
@@ -482,11 +486,13 @@ ul {
   display: flex;
   margin-top: 0.5rem;
   justify-content: space-between;
-    align-items: center; /* Aligns items vertically in the center */
+  align-items: center;
+  /* Aligns items vertically in the center */
   gap: 5px;
   font-weight: bold;
 }
-.special h5{
+
+.special h5 {
   display: flex;
   gap: 2px;
   font-size: 25px;
@@ -496,12 +502,13 @@ ul {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  color:  #7DC3BB;
+  color: #7DC3BB;
   cursor: text;
   font-weight: 600;
   font-size: 12px;
   justify-content: space-between;
-    align-items: center; /* Aligns items vertically in the center */
+  align-items: center;
+  /* Aligns items vertically in the center */
   margin-left: 33rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
