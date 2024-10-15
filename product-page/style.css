@@ -346,14 +346,18 @@ ul {
   display: flex;
   margin-top: 10px;
   margin-left: 15px;
+  justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
 }
 
 .bamboo a {
   display: flex;
   flex-direction: row;
   margin-left: 20rem;
+  justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
   justify-content: flex-end;
-  margin-top: -2.5rem;
+  margin-top: -2.3rem;
   padding: 20px;
   text-decoration: none;
   color: #157A74;
@@ -380,6 +384,14 @@ ul {
   bottom: 13px;
 }
 
+.select{
+  display: flex;
+  font-size: 30px;
+  margin-left: 8px;
+  margin-top: 1rem;
+  gap: 2px;
+}
+
 .reward button {
   background-color: #366a67;
   padding: 10px 30px;
@@ -388,7 +400,7 @@ ul {
   border: none;
   cursor: pointer;
   font-weight: 500;
-  margin-left: 25rem;
+  margin-left: 30rem;
   margin-top: -3rem;
 }
 
@@ -407,21 +419,27 @@ ul {
   margin-top: 1rem;
 }
 
+
 .edition h3 {
   display: flex;
-  margin-top: 1rem;
+  /* margin-top: 0.5rem; */
   bottom: 13px;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
 }
 
 .edition a {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Aligns items vertically in the center */
   text-decoration: none;
+  justify-content: flex-end;
   color: #157A74;
   font-weight: 600;
   font-size: 12px;
   margin-left: 29rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   margin-bottom: 2rem;
 }
 
@@ -438,6 +456,7 @@ ul {
 
 .edition h4 {
   display: flex;
+  font-size: 25px;
   margin-top: 1rem;
   gap: 5px;
   font-weight: bold;
@@ -452,7 +471,7 @@ ul {
   color: white;
   cursor: pointer;
   font-weight: 500;
-  margin-left: 25rem;
+  margin-left: 30rem;
   margin-top: -2rem;
 }
 
@@ -475,9 +494,16 @@ ul {
 .special h4 {
   color: #777;
   display: flex;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
   gap: 5px;
   font-weight: bold;
+}
+.special h5{
+  display: flex;
+  gap: 2px;
+  font-size: 25px;
 }
 
 .special a {
@@ -488,7 +514,9 @@ ul {
   cursor: text;
   font-weight: 600;
   font-size: 12px;
-  margin-left: 29rem;
+  justify-content: space-between;
+    align-items: center; /* Aligns items vertically in the center */
+  margin-left: 33rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
 }
