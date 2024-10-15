@@ -1,69 +1,63 @@
-// arrays this are variable structure that carries more than one value
 
-let fruits = ["Mangoe", "Avocado", "Banana","Melon"]
+// To ensure my Js code runs after the HTML has fullyLoaded
+document.addEventListener("DOMContentLoaded", function loadTasks() {
+  let tasks = JSON.parse(localStorage.getItem('tasks')) ||  [];
+  tasks.forEach(task => addTaskToDOM(task));
+  // DOM  elements
+  const form = document.getElementById("To-Do List Appplication");
+  const addButton = document.getElementById("add-task-btn").onclick = addTasz
+  const taskInput = document.getElementById("task-input");
+  const taskList = document.getElementById("task-list");
 
-fruits.sort().reverse();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    addTask();
+  });
 
-for(let fruit of fruits){
+  // Function for adding New tasks to the list
+  function addTask() {
+    const taskText = taskInput.value.trim();
+    if(taskText !== "") {
+      alert("Please enter a task.");
+      return taskText;
+    }
 
-console.log(fruit);
-
-}
-
-// oject are key values pairs in curlbraces
-let user = {
-  name:"Gabriel",
-  age:23,
-  Country:"Kenya"
-}
-
-console.log(user.age);
-
-//Inheritance 
-let vehicle = {
-  type:"BMW",
-  wheels:4,
-  engine: function(){
-    return"Vrooom"
+    //Task craction and removal
+    const li = document.createElement("li");
+    li.textContent = taskText;
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.classList.add = "remove-btn";
+    removeButton.onclick = function () {
+      taskList.removeChild(li);
+    };
+    li.appendChild(removeButton);
+    taskList.appendChild(li); 
+    taskInput.value = "";
   }
-} 
-// console.log(vehicle.engine)
-const truck =  Object.create(vehicle)
-truck.door = 2
-console.log(truck.door)
-console.log(truck.engine())
 
+  // this will disable reload on click
+  addButton.addEventListener("click", addTask)
+    // e.preventDefault();
+    
+  
 
+  taskInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      addTask();
+    }
+  });
 
-//Walk the dog
-//clean the kitchen
-// take ut the ctrash
+  // Task Addition functionality
+  function addTask(task, save = true){
+    localStorage.setItem('tasks', JSON.stringify(storedTasks));
+    addTaskToDOM(task);
 
-function walkDog(callback){
-  setTimeout(() => {
-    console.log("You walk the dog")
-    callback()
-  },1500)
-};
+    if (save) {
+      const storedTasks = (localStorage.getItem ('tasks' || '[]'));
+      storedTasks.push(taskText);
+    }
+  }
 
-function cleanKitchen(callback){
-  setTimeout(() => {
-    console.log("You cleaned the kitchen")
-    callback()
-  },2500)
-};
-
-function collectTrash(callback){
-  setTimeout(() => {
-    console.log("You collected the trash")
-    callback()
-  },1500)
-};
-
-walkDog(() => {
-   cleanKitchen(() => {
-      collectTrash(() =>{
-         console.log("Completed chores")
-      })
-   })
-})
+});
