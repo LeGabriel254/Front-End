@@ -226,20 +226,6 @@ ul {
   width: 20px;
 }
 
-.secondary {
-  /* display: flex;
-  align-items: center;
-  justify-self: center;
-  flex-direction: row;
-  padding: 16px 35px;
-  background-color: #F4F8F9;
-  color:#1f7e6c;
-  font-size: 15px;
-  border-radius: 35px;
-  border: none;
-  cursor: pointer;
-  position: relative; */
-}
 
 #container2 {
   margin-left: 20rem;
@@ -291,7 +277,7 @@ ul {
 }
 
 .progress {
-  background-color: #20c997;
+  background-color: #7DC3BB;
   height: 100%;
   border-radius: 5px;
 }
@@ -360,7 +346,7 @@ ul {
   margin-top: -2.3rem;
   padding: 20px;
   text-decoration: none;
-  color: #157A74;
+  color:  #7DC3BB;
   font-weight: 600;
   font-size: 12px;
 }
@@ -400,7 +386,7 @@ ul {
   border: none;
   cursor: pointer;
   font-weight: 500;
-  margin-left: 30rem;
+  margin-left: 29.5rem;
   margin-top: -3rem;
 }
 
@@ -435,7 +421,7 @@ ul {
   align-items: center; /* Aligns items vertically in the center */
   text-decoration: none;
   justify-content: flex-end;
-  color: #157A74;
+  color:  #7DC3BB;
   font-weight: 600;
   font-size: 12px;
   margin-left: 29rem;
@@ -510,7 +496,7 @@ ul {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  color: #1f7e6c;
+  color:  #7DC3BB;
   cursor: text;
   font-weight: 600;
   font-size: 12px;
