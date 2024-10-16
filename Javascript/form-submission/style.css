@@ -9,9 +9,9 @@ body {
 }
 
 form {
-  background: #ffffff;
+  background: #FFFFFF;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
@@ -21,19 +21,28 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #333;
+  font-size: 13px;
+}
+
+.srl{
+  color: #B5B5B5;
+  font-size: 9px;
+  margin-top: -1rem;
+  font-weight: bold;
 }
 
 input {
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: #F9F9F9;
+ border: none;
+  border-radius: 8px;
   width: calc(100% - 22px); /* Adjust width to account for padding and border */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 button {
-  background-color: #007bff;
+  background-color: #5E51D9;
   color: white;
   padding: 10px 15px;
   border: none;
