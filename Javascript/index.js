@@ -82,3 +82,17 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 }
 );
+
+// Fetching and logging a Random Activity from Bored API
+async function getBoredActivity(){
+  try{
+    const res = await fetch('https://www.boredapi.com/api/activity/')
+    if(!res.ok){
+      throw new Error('Network error')
+    }
+    const data =  res.json()
+    return data
+  }catch(error){
+ console.error('Netrowk error', error)
+  }
+}
