@@ -110,5 +110,20 @@ if(username.value.length < 3){
   return;
 }else{
   usernameError.textContent = ''
+};
+
+// validate email
+const ageInput = document.getElementById('age');
+const ageError = document.getElementById('ageError')
+
+if(ageInput.value.length < 18){
+  ageError.textContent = "Age must be between 18 and below 99"
+return;
+  // age.focus();
+}else{
+  ageError.textContent = ''
 }
+
+
+// form.submit()
 })
