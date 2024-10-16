@@ -20,7 +20,7 @@ let isValid = true;
  let message = [];
 
   // Check if any field is empty
-  if (name === "" || userEmailemail === "" || userPassword === "") {
+  if (name === "" || userEmail === "" || userPassword === "") {
     alert("Please fill out all fields.");  // Alert for incomplete form
     return;  // Stop further validation and submission
 }
