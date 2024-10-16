@@ -16,6 +16,19 @@
             <!-- Tasks will be listed here -->
         </ul>
     </div>
+
+    <form action="/" id="form">
+        <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required minlength="3" maxlength="15">
+      <span class="error" id="usernameError"></span>
+        <label for="Email" class="email">Email</label>
+        <input type="email">
+        <span id="error"></span>
+        <label for="age">age</label>
+        <input type="number">
+        <textarea name="Message" id="" cols="30" rows="10">Message</textarea>
+        <button type="submit">Submit</button>
+    </form>
     <script src="index.js"></script>
 </body>
 
