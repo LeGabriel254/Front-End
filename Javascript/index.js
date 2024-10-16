@@ -95,4 +95,20 @@ async function getBoredActivity(){
   }catch(error){
  console.error('Netrowk error', error)
   }
+};
+
+const form = document.getElementById('form')
+
+form.addEventListener('submit', function(event){
+  event.preventDefault();
+
+// validate Email
+const username = document.getElementById('username')
+const usernameError = document.getElementById('usernameError')
+if(username.value.length < 3){
+  usernameError.textContent=('Must be more than 3')
+  return;
+}else{
+  usernameError.textContent = ''
 }
+})
