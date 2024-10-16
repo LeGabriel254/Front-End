@@ -66,3 +66,9 @@ li {
 .remove-btn:hover {
   background-color: #d9534f;
 }
+
+#form{
+  display:grid;
+  background-color: #d9534f;
+  margin-left: 1rem;
+}
