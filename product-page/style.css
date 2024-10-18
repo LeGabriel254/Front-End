@@ -328,43 +328,118 @@ ul {
   margin-top: 1rem;
 }
 
-.Model{
+.Model {
   background-color: white;
   padding: 10px;
   width: 45%;
   margin-top: 8rem;
   height: 60%;
   margin-left: 22rem;
-  border:  1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   text-align: center;
   position: relative;
-   display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
   border-radius: 10px;
 }
-.Model img{
+.project{
+  background-color:white;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px solid #e0e0e0;
+  text-align: center;
+  position: relative;
+  display: none;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  margin-right: -3rem;
+}
+.back p{
+  line-height: 2;
+  color: #777;
+  margin-right: 1.3rem;
+}
+input{
+  height: 20px;
+  width: 20px;
+  border: 2px solid #042f2c; /* Color of the border */
+  border-radius: 50%; /* Make it circular */
+}
+.option{
+  background-color: white;
+  width: 100%;
+  border-radius: 5px ;
+  border: 0.5px solid #e0e0e0;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+.option p{
+  line-height: 1.2;
+  text-align: justify;
+  color: #777;
+  margin-left: 4rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+.brt{
+  display:flex;
+  margin-left:  2rem;
+  margin-top: 1rem;
+  gap: 15px;
+  color: #2f928b;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.days{
+  color: black;
+  display: flex;
+  flex-direction:initial;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-left: 33rem;
+  margin-top: -1.3rem;
+  gap: 4px;
+}
+.days span{
+  color: #777;
+  font-size: 10px;
+  margin-top: 0.2rem;
+}
+.back h2{
+display: flex;
+margin-top: 1rem;
+font-size: 20px;
+margin-left: 1rem;
+}
+.Model img {
   margin-top: 2rem;
 }
-.Model h2{
+
+.Model h2 {
   font-size: 25px;
   font-style: normal;
   margin-top: 2rem;
 }
 
-.Model p{
+.Model p {
   line-height: 1.2;
-  text-align:center;
+  text-align: center;
   color: #777;
   font-size: 19px;
   margin-top: 1.5rem;
   font-weight: 200;
 }
 
-.Model button{
-  border-radius:20px;
+.Model button {
+  border-radius: 20px;
   padding: 10px 25px;
   border: none;
   color: #e0e0e0;
@@ -373,17 +448,18 @@ ul {
   margin-top: 2rem;
   background-color: #157A74;
 }
-.Model button:hover{
-  background-color:#1f5652;
+
+.Model button:hover {
+  background-color: #1f5652;
   cursor: pointer;
 }
+
 .bamboo h3 {
   display: flex;
   margin-top: 10px;
   margin-left: 15px;
   justify-content: space-between;
   align-items: center;
-  /* Aligns items vertically in the center */
 }
 
 .bamboo a {
@@ -392,7 +468,6 @@ ul {
   margin-left: 20rem;
   justify-content: space-between;
   align-items: center;
-  /* Aligns items vertically in the center */
   justify-content: flex-end;
   margin-top: -2.3rem;
   padding: 20px;
