@@ -19,5 +19,11 @@ button.onclick = function() {
 got.onclick = function(){
   support.style.display = "none"
 }
+// When the user clicks anywhere outside of the support, close it
+window.onclick = function(event) {
+  if (event.target == support) {
+      support.style.display = "none";
+  }
+}
 
 })
