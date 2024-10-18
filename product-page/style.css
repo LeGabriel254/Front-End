@@ -218,12 +218,13 @@ ul {
 
 ;
 
-#bookmark {
+.secondary {
   width: 4px;
   padding-bottom: 100rem;
   object-fit: contain;
   height: 20px;
   width: 20px;
+  background-color: #2f928b;
 }
 
 
@@ -345,49 +346,61 @@ ul {
   top: 0;
   border-radius: 10px;
 }
-.close{
-font-weight: bolder;
-font-size: 24px;
-font-style: normal;
-margin-left: 35rem;
-display: flex;
-cursor: pointer;
+
+.close {
+  font-weight: bolder;
+  font-size: 24px;
+  font-style: normal;
+  margin-left: 43rem;
+  display: flex;
+  cursor: pointer;
 }
-.project{
-  background-color:white;
+
+.project {
+  background-color: white;
   padding: 10px;
-  width: 100%;
+  width: 60%;
+  margin-top: 8rem;
   height: 100%;
-  border-radius: 1px solid #e0e0e0;
+  margin-left: 16rem;
+  border: 1px solid #e0e0e0;
   text-align: center;
   position: relative;
   display: none;
+  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   border-radius: 10px;
-  margin-right: -3rem;
 }
-.back p{
+
+.back p {
+  display: flex;
   line-height: 2;
   color: #777;
   margin-right: 1.3rem;
+  margin-left: 1rem;
 }
-input{
+
+input {
   height: 20px;
   width: 20px;
-  border: 2px solid #042f2c; /* Color of the border */
-  border-radius: 50%; /* Make it circular */
+  border: 2px solid #042f2c;
+  /* Color of the border */
+  border-radius: 50%;
+  /* Make it circular */
 }
-.option{
+
+.option {
   background-color: white;
   width: 100%;
-  border-radius: 5px ;
+  border-radius: 5px;
   border: 0.5px solid #e0e0e0;
   margin-top: 0.6rem;
   margin-bottom: 2rem;
 }
-.option p{
+
+.option p {
   line-height: 1.2;
   text-align: justify;
   color: #777;
@@ -395,9 +408,10 @@ input{
   margin-top: 0.7rem;
   margin-bottom: 1.5rem;
 }
-.brt{
-  display:flex;
-  margin-left:  2rem;
+
+.brt {
+  display: flex;
+  margin-left: 2rem;
   margin-top: 1rem;
   gap: 15px;
   color: #2f928b;
@@ -405,10 +419,11 @@ input{
   font-weight: bold;
   cursor: pointer;
 }
-.days{
+
+.days {
   color: black;
   display: flex;
-  flex-direction:initial;
+  flex-direction: initial;
   font-size: 15px;
   font-weight: bold;
   margin-right: 1rem;
@@ -416,17 +431,20 @@ input{
   margin-top: -1.3rem;
   gap: 4px;
 }
-.days span{
+
+.days span {
   color: #777;
   font-size: 10px;
   margin-top: 0.2rem;
 }
-.back h2{
-display: flex;
-margin-top: -0.6rem;
-font-size: 20px;
-margin-left: 1rem;
+
+.back h2 {
+  display: flex;
+  margin-top: -0.6rem;
+  font-size: 20px;
+  margin-left: 1rem;
 }
+
 .Model img {
   margin-top: 2rem;
 }
