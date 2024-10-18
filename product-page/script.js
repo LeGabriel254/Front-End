@@ -1,12 +1,12 @@
 //JavaScript code runs after the html has fullyloaded
 document.addEventListener('DOMContentLoaded', function(){
-  
   function toggleMenu() {
     const menu = document.getElementById("nav-links");
     const icon = document.getElementById("hamburger-icon")
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+ 
   //DOM Elements
   const button = document.getElementById('bookmark');
   const support = document.getElementById('support');
