@@ -226,7 +226,13 @@ ul {
   width: 20px;
   background-color: #2f928b;
 }
-
+.secondary-btn{
+  background-color: #F4F8F9;
+  border: none;
+  border-radius: 15px;
+  padding: -20px -10px;
+  cursor: pointer;
+}
 
 #container2 {
   margin-left: 20rem;
@@ -365,7 +371,7 @@ ul {
   margin-left: 16rem;
   border: 1px solid #e0e0e0;
   text-align: center;
-  position: relative;
+  position:static;
   display: none;
   position: fixed;
   z-index: 1;
@@ -670,4 +676,7 @@ input {
   color: #777;
   margin-left: 20px;
   padding-bottom: 10px;
+}
+body.no-scroll {
+  overflow: hidden;
 }
