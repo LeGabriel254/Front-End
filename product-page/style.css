@@ -373,6 +373,10 @@ ul {
   margin-top: 2rem;
   background-color: #157A74;
 }
+.Model button:hover{
+  background-color:#1f5652;
+  cursor: pointer;
+}
 .bamboo h3 {
   display: flex;
   margin-top: 10px;
