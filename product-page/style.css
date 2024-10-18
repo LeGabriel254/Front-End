@@ -328,6 +328,51 @@ ul {
   margin-top: 1rem;
 }
 
+.Model{
+  background-color: white;
+  padding: 10px;
+  width: 45%;
+  margin-top: 8rem;
+  height: 60%;
+  margin-left: 22rem;
+  border:  1px solid #e0e0e0;
+  text-align: center;
+  position: relative;
+   display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+  border-radius: 10px;
+}
+.Model img{
+  margin-top: 2rem;
+}
+.Model h2{
+  font-size: 25px;
+  font-style: normal;
+  margin-top: 2rem;
+}
+
+.Model p{
+  line-height: 1.2;
+  text-align:center;
+  color: #777;
+  font-size: 19px;
+  margin-top: 1.5rem;
+  font-weight: 200;
+}
+
+.Model button{
+  border-radius:20px;
+  padding: 10px 25px;
+  border: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 2rem;
+  background-color: #157A74;
+}
 .bamboo h3 {
   display: flex;
   margin-top: 10px;
@@ -461,7 +506,7 @@ ul {
   color: white;
   cursor: pointer;
   font-weight: 500;
-  margin-left: 30rem;
+  margin-left: 25rem;
   margin-top: -2rem;
 }
 
