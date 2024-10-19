@@ -11,6 +11,8 @@
 html {
   scroll-behavior: smooth;
   max-height: auto;
+  /* overflow: hidden; */
+  scrollbar-width: none;
 }
 
 
@@ -237,6 +239,7 @@ ul {
   margin-left: 20rem;
   margin-top: 1rem;
   display: flex;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
@@ -244,17 +247,20 @@ ul {
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 40%;
 }
 
 
 .amount {
-  font-size: 30px;
+  font-size: 1rem;
   display: inline;
   font-weight: bold;
-  margin-top: 1rem;
+  gap: 4rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
-  left: -2rem;
-  padding: 20px;
+  margin-left: 5rem;
+  /* left: -2rem; */
+  padding: 3px;
   text-align: center;
 
 }
@@ -273,13 +279,14 @@ ul {
 
 .progress-bar {
 
-  width: 50%;
+  width: 90%;
   height: 13px;
   background-color: #e0e0e0;
   border-radius: 5px;
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: 1.5rem;
-  margin-left: -22.7rem;
+  margin-left: -26.7rem;
+  margin-right: 8rem;
 }
 
 .progress {
@@ -375,7 +382,6 @@ ul {
   border: 1px solid #e0e0e0;
   text-align: center;
   position:static;
-  display: none;
   overflow: hidden;
   position: fixed;
   overflow-y:auto;    /* Allow scrolling inside the project */
@@ -398,7 +404,7 @@ ul {
   margin-left: 1rem;
 }
 
-input {
+.radio {
   height: 20px;
   width: 20px;
   border: 2px solid #042f2c;
