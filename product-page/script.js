@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function handleModalAction(modalClass, action) {
 
     if (action === 'open') {
-      // document.body.classList.add( 'blur-backdrop')
+   
       document.body.classList.add('lock-scroll')
       modalClass.open = true;
     } else {
