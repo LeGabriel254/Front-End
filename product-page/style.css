@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+ 
 }
 
 html {
@@ -216,7 +216,6 @@ ul {
   font-weight: bold;
 }
 
-;
 
 .secondary {
   width: 4px;
@@ -229,8 +228,8 @@ ul {
 .secondary-btn{
   background-color: #F4F8F9;
   border: none;
-  border-radius: 15px;
-  padding: -20px -10px;
+  border-radius: 40px;
+  padding: 0px 7px;
   cursor: pointer;
 }
 
@@ -344,14 +343,18 @@ ul {
   margin-left: 22rem;
   border: 1px solid #e0e0e0;
   text-align: center;
-  position: relative;
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
+
+/* Lock scroll class - prevents scrolling */
+.lock-scroll {
+  overflow: hidden;
+}
+
 
 .close {
   font-weight: bolder;
@@ -367,17 +370,24 @@ ul {
   padding: 10px;
   width: 60%;
   margin-top: 8rem;
-  height: 100%;
+  height: 70%;
   margin-left: 16rem;
   border: 1px solid #e0e0e0;
   text-align: center;
   position:static;
   display: none;
+  overflow: hidden;
   position: fixed;
+  overflow-y:auto;    /* Allow scrolling inside the project */
   z-index: 1;
+  scrollbar-width: none;
   left: 0;
   top: 0;
   border-radius: 10px;
+  
+}
+.project::-webkit-scrollbar{
+  display: none;
 }
 
 .back p {
@@ -392,9 +402,9 @@ input {
   height: 20px;
   width: 20px;
   border: 2px solid #042f2c;
-  /* Color of the border */
+
   border-radius: 50%;
-  /* Make it circular */
+
 }
 
 .option {
@@ -433,7 +443,7 @@ input {
   font-size: 15px;
   font-weight: bold;
   margin-right: 1rem;
-  margin-left: 33rem;
+  margin-left: 40rem;
   margin-top: -1.3rem;
   gap: 4px;
 }
@@ -677,6 +687,7 @@ input {
   margin-left: 20px;
   padding-bottom: 10px;
 }
-body.no-scroll {
+
+.lock-scroll{
   overflow: hidden;
 }
