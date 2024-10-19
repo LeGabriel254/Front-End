@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const close = document.getElementById('close')
   const secondary = document.getElementById('secondary')
   const project = document.getElementById('project')
-  const container = document.getElementById('container')
+  // const container = document.getElementById('container')
 
   function toggleMenu() {
 
@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // when the user clicks the secondary button the projects open
   secondary.onclick = () => {
-    project.style.display = "block"
+    handleModalAction(project, 'open')
   }
 
   //when the user clicks close(x) the project close
   close.onclick = () => {
-    project.style.display = "none"
+    handleModalAction( project, 'close')
   }
 
   window.onmousedown = () => {
