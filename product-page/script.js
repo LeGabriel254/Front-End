@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function(){
     icon.classList.toggle("open");
   }
  
+  function btn(){
+      const button = document.getElementById('button');
+        const support = document.getElementById('support');
+        button.classList.onclick = support
+  }
   //DOM Elements
   const button = document.getElementById('button');
   const support = document.getElementById('support');
@@ -33,7 +38,7 @@ got.onclick = function(){
 // when the user clicks the secondary button the projects open
 secondary.onclick = function(){
 project.style.display ="block"
-
+document.body.classList.add('scrolling');
 }
 
 
@@ -45,10 +50,10 @@ close.onclick = function (){
 
 
 // When the user clicks anywhere outside of the support, close it
-window.onclick = function(event) {
-  if (event.target == support) {
-      support.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == support) {
+//       support.style.display = "none";
+//   }
+// }
 
 })
