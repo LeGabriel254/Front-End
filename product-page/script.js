@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     handleModalAction(support, 'close')
   }
 
-  // // when the user clicks the secondary button the projects open
-  // secondary.onclick = () => {
-  //   handleModalAction(project, 'open')
-  // }
+  // when the user clicks the secondary button the projects open
+  secondary.onclick = () => {
+    handleModalAction(project, 'open')
+  }
 
   //when the user clicks close(x) the project close
   close.onclick = () => {

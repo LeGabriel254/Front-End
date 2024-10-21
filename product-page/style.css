@@ -383,7 +383,6 @@ ul {
   text-align: center;
   position:static;
   overflow: hidden;
-  display: contents;
   position: fixed;
   overflow-y:auto;    /* Allow scrolling inside the project */
   z-index: 1;
