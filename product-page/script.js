@@ -5,12 +5,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   
   //DOM Elements
-  const button = document.getElementById('button');
+  const button = document.getElementById('conti');
   const support = document.getElementById('support');
   const got = document.getElementById('got');
   const close = document.getElementById('close')
   const secondary = document.getElementById('secondary')
   const project = document.getElementById('project')
+  const succefully= document.getElementById('continue')
+  const hold = document.getElementById('holder')
   // const container = document.getElementById('container')
 
   function toggleMenu() {
@@ -21,6 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
     icon.classList.toggle("open");
 
   }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let isValid = true;
+  
+    // Validate first name
+    if (!nameRegex.test(firstName.value.trim())) {
+      showOrRemoveError(
+        firstName,
+        "Please enter a valid first name (at least 2 characters, letters only)"
+      );
+      isValid = false;
+    } else {
+      showOrRemoveError(firstName);
+    }
+  })  
 
   function handleModalAction(modalClass, action) {
 
@@ -35,24 +53,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   // When the user clicks the bookmark button, open the modal
-  button.onclick = () => {
+  succefully.onclick = () => {
     handleModalAction(support, 'open')
   }
 
+  button.onclick = () => {
+    handleModalAction(support, 'open')
+  }
   //When the user clicks the got, the support closes
   got.onclick = () => {
     handleModalAction(support, 'close')
   }
 
-  support.onmouseleave = function () {
-    handleModalAction(support, 'close')
-  }
+  // support.onmouseleave = function () {
+  //   handleModalAction(support, 'close')
+  // }
 
   // when the user clicks the secondary button the projects open
   secondary.onclick = () => {
     handleModalAction(project, 'open')
   }
-
+  
   //when the user clicks close(x) the project close
   close.onclick = () => {
     handleModalAction( project, 'close')
