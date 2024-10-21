@@ -413,16 +413,21 @@ ul {
 
 }
 .pledge{
-  display: none;
-  margin-top: 2rem;
-  margin-bottom: 1.8rem;
+  display: flex;
+  margin-top: 1rem;
+  /* margin-bottom: 1.8rem; */
+  width: 60%;
+  border: none;
+
+  /* margin-left: 2rem; */
 }
 .holder{
   border: none;
   font-size: 12px;
   margin-left: 2.5rem;
   margin-top: 1rem;
-
+  margin-bottom: 1.7rem;
+  display: flex;
 }
 .holder:focus {
   outline: none;
@@ -430,13 +435,16 @@ ul {
 }
 .continue button{
   border-radius: 20px;
+  display: flex;
   padding: 10px 18px;
   background-color: #366a67;
   color: white;
   border: none;
   cursor: pointer;
+margin-top: -4.3rem;
+margin-bottom: 1rem;
   margin-right: 1rem;
-  margin-left: 3rem;
+  margin-left: 28rem;
 }
 .continue button:hover{
   background-color:#1f5652;
@@ -445,11 +453,14 @@ ul {
   border-radius: 20px;
   padding: 10px 25px;
   font-size: 12px;
+  display: flex;
   font-weight: bold;
   width: 20%;
   cursor: pointer;
+  margin-bottom: 2rem;
  border:1px solid #1f5652;
-margin-left: 10rem;
+ margin-top: 0.5rem;
+margin-left: 19rem;
 }
 .continue input:focus {
   outline: none;
@@ -462,6 +473,10 @@ margin-left: 10rem;
   border: 0.5px solid #e0e0e0;
   margin-top: 0.6rem;
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+.option:hover{
+  border: 1px solid #3da39c;
 }
 
 .option p {
