@@ -24,22 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    let isValid = true;
-  
-    // Validate first name
-    if (!nameRegex.test(firstName.value.trim())) {
-      showOrRemoveError(
-        firstName,
-        "Please enter a valid first name (at least 2 characters, letters only)"
-      );
-      isValid = false;
-    } else {
-      showOrRemoveError(firstName);
-    }
-  })  
-
   function handleModalAction(modalClass, action) {
 
     if (action === 'open') {
@@ -50,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalClass.open = false
       document.body.classList.remove('lock-scroll')
     }
+    
   }
   
   // When the user clicks the bookmark button, open the modal
@@ -63,8 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
   //When the user clicks the got, the support closes
   got.onclick = () => {
     handleModalAction(support, 'close')
+    setTimeout( () => {
+      location.reload(); // Reload the page to start fresh
+  }, 2000); // Waits for 2 seconds before reloading
   }
-
+ 
   // support.onmouseleave = function () {
   //   handleModalAction(support, 'close')
   // }
