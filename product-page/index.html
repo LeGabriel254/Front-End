@@ -42,9 +42,11 @@
       <h2>Mastercraft Bamboo Monitor Riser</h2>
       <p> A beautiful & handcrafted standards to reduce neck and eye strain.</p>
 
-      <div class="btn" >
-        <button class="primary-button" id="secondary" >Back this project</button>
-        <button class="secondary-btn" id="button" style="display: flex;"><img src="./images/icon-bookmark.svg" alt="" style="width: 23%; margin-top: 0.5rem; margin-bottom: 0.5rem;"><span style="color: green; margin-left: 1rem; margin-top: 1rem;">Bookmarked</span></button>
+      <div class="btn">
+        <button class="primary-button" id="secondary">Back this project</button>
+        <button class="secondary-btn" id="button" style="display: flex;"><img src="./images/icon-bookmark.svg" alt=""
+            style="width: 23%; margin-top: 0.5rem; margin-bottom: 0.5rem;"><span
+            style="color: green; margin-left: 1rem; margin-top: 1rem;">Bookmarked</span></button>
       </div>
     </div>
 
@@ -77,9 +79,14 @@
         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch <br> our promotional campaign, and
           you'll be added to a special Backer member list.</p>
 
-          <div>
-            <input type="text" placeholder="Enter pledge">
+        <dialog class="pledge" id="pledges">
+          <input type="number" placeholder="Enter your pledge" class="holder">
+          <div class="continue">
+      
+            <input type="number" id="amount" placeholder="$25" min="0" step="1" style="color: black;">
+            <button>Continue</button>
           </div>
+        </dialog>
       </div>
 
       <div class="option">
@@ -110,7 +117,7 @@
     </dialog>
 
     <dialog id="support" class="Model">
-      
+
       <div>
         <img src="./images/check.svg" alt="check">
       </div>
@@ -128,7 +135,7 @@
     <div id="container2">
 
       <div class="amount">$89,914 <span class="separator">|</span><br><span class="goal">of $100,000 backed</span></div>
-    
+
       <div class="amount">5,007 <span class="separator">|</span><br><span class="goal">total backers</span></div>
 
       <div class="amount">56 <br><span class="goal">days left</span></div>
@@ -171,7 +178,7 @@
         <div class="select" style="margin-bottom: -1rem;gap: 5px;">101 <span
             style="color: #777;font-size: 20px;margin-top: 10px;">left</span>
 
-          </div>
+        </div>
 
         <button class="select-button" style="margin-left: 26rem;">Select Reward</button>
 
