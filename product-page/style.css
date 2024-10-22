@@ -133,8 +133,6 @@ ul {
   transform: none;
 }
 
-
-/* Style for nav links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -259,10 +257,8 @@ ul {
   margin-top: 2rem;
   margin-bottom: 5rem;
   margin-left: 5rem;
-  /* left: -2rem; */
   padding: 3px;
   text-align: center;
-
 }
 
 .goal,
@@ -357,7 +353,6 @@ ul {
   border-radius: 10px;
 }
 
-/* Lock scroll class - prevents scrolling */
 .lock-scroll {
   overflow: hidden;
 }
@@ -408,18 +403,13 @@ ul {
   height: 20px;
   width: 20px;
   border: 2px solid #042f2c;
-
-  border-radius: 50%;
-
+ border-radius: 50%;
 }
 .pledge{
   display: flex;
   margin-top: 1rem;
-  /* margin-bottom: 1.8rem; */
   width: 60%;
   border: none;
-
-  /* margin-left: 2rem; */
 }
 .holder{
   border: none;
@@ -640,11 +630,9 @@ margin-left: 19rem;
 
 .edition h3 {
   display: flex;
-  /* margin-top: 0.5rem; */
   bottom: 13px;
   justify-content: space-between;
   align-items: center;
-  /* Aligns items vertically in the center */
 }
 
 .edition a {
@@ -652,8 +640,7 @@ margin-left: 19rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* Aligns items vertically in the center */
-  text-decoration: none;
+    text-decoration: none;
   justify-content: flex-end;
   color: #7DC3BB;
   font-weight: 600;
@@ -717,7 +704,6 @@ margin-left: 19rem;
   margin-top: 0.5rem;
   justify-content: space-between;
   align-items: center;
-  /* Aligns items vertically in the center */
   gap: 5px;
   font-weight: bold;
 }
@@ -738,7 +724,6 @@ margin-left: 19rem;
   font-size: 12px;
   justify-content: space-between;
   align-items: center;
-  /* Aligns items vertically in the center */
   margin-left: 29rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
