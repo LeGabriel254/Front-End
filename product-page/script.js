@@ -1,4 +1,11 @@
+function toggleMenu() {
 
+  const menu = document.getElementById("menu-links");
+  const icon = document.getElementById("hamburger-icon")
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+
+};
 //JavaScript code runs after the html has fullyloaded
 document.addEventListener('DOMContentLoaded', () => {
   
@@ -11,14 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const project = document.getElementById('project')
   const succefully= document.getElementById('continue')
 
-  function toggleMenu() {
-
-    const menu = document.getElementById("nav-links");
-    const icon = document.getElementById("hamburger-icon")
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-
-  };
+  
 
   function handleModalAction(modalClass, action) {
 
