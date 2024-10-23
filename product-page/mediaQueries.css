@@ -1,11 +1,43 @@
 @media screen and (max-width: 1400px) {
-  
+  .container {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  #container2{
+    font-size: 2px;
+  }
+  .select-button{
+    margin-right: 50rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .nav-links {
+    display: none;
   
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #container2{
+    font-size: 2px;
+  }
+  .select-button{
+    /* margin-right: 50rem; */
+    position: relative;
+    display: flex;
+  }
   }
 
 @media screen and (max-width: 600px) {
- 
+  #container2{
+    font-size: 2px;
+  }
+  .select-button{
+  display: flex;
+  }
+  #hamburger-nav {
+    display: flex;
+    margin-top: -15rem;
+  }
 }
